@@ -29,6 +29,7 @@ Fashion-Adda/
     ├── src/
     └── pom.xml
 
+
     ⚙️ Installation & Setup
 1. Prerequisites
 Node.js (v14+)
@@ -82,21 +83,5 @@ The application uses Spring Security with JWT to protect sensitive routes. The A
 💳 Payment Integration
 This project uses the Razorpay API for payment processing. To use it, ensure you have your RAZORPAY_KEY_ID and RAZORPAY_KEY_SECRET configured in the backend environment.
 
-How to add this to your GitHub:
-Open VS Code.
-
-Create a new file named README.md (if not already there).
-
-Paste the content above.
-
-Run these commands in your terminal:
-
-Bash
-
-git add README.md
-git commit -m "Add professional README for Fashion Adda"
-git push origin main
-
 Order Tracking: Monitor and manage customer orders in real-time.
 
-User Management: Overview of registered users on the platform.
