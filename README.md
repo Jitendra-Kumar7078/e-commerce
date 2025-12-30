@@ -1,90 +1,139 @@
-👗 Fashion Adda - Premium Fashion E-commerce Store
-Fashion Adda is a full-stack e-commerce web application designed for a seamless shopping experience. It features a modern, responsive UI built with React and Tailwind CSS, backed by a powerful and secure Spring Boot REST API.
+# 👗 Fashion Adda – Premium Fashion E-Commerce Store (Frontend)
 
-User Interface(Screen Shot) Link
+**Fashion Adda** is a modern and responsive fashion e-commerce web application frontend built with **React** and **Tailwind CSS**.  
+It provides a smooth and engaging shopping experience and communicates with a secure **Spring Boot REST API** backend.
+
+---
+
+## 🖼️ User Interface (Screenshots)
+
+🔗 **UI Preview:**  
 https://drive.google.com/file/d/1V44Tc7tooDNMmkS_HdBXael-0NTEAbau/view?usp=drive_link
 
-🚀 Features
-👤 User Side
-Secure Authentication: User registration and login powered by JWT (JSON Web Tokens) and Spring Security.
+---
 
-Interactive UI: High-quality product carousels and a clean layout using Tailwind CSS.
+## 🚀 Features
 
-Product Discovery: Easy-to-use search functionality to find the latest fashion trends.
+### 👤 User Side
+- **Secure Authentication:** User registration and login using JWT-based authentication.
+- **Interactive UI:** Clean, modern design with Tailwind CSS and smooth UI components.
+- **Product Discovery:** Search and browse the latest fashion products easily.
+- **Shopping Cart:** Add/remove products and manage quantities seamlessly.
+- **Checkout & Payments:** Razorpay integration for secure online payments.
+- **Order History:** View and track previous orders.
 
-Shopping Cart: Add/remove items and manage quantities effortlessly.
+---
 
-Checkout & Payments: Integrated with Razorpay for secure and smooth transactions.
+### 🛡️ Admin Side
+- **Product Management:** Add, update, and delete fashion products.
+- **Inventory Control:** Manage product listings efficiently from the admin panel.
 
-Order History: Users can track and view their previous fashion purchases.
+---
 
-🛡️ Admin Side
-Product Management: Add, update, or delete fashion products from the inventory.
+## 🛠️ Tech Stack
 
-🛠️ Tech StackLayerTechnologyFrontendReact.js, Tailwind CSS, Lucide Icons, Carousel ComponentsBackendJava, Spring Boot, Spring Security, JWTDatabaseMySQL, Hibernate / Spring Data JPAPaymentRazorpay GatewayBuild ToolMaven, NPM
+| Layer      | Technology |
+|-----------|-----------|
+| Frontend  | React.js, Tailwind CSS, Lucide Icons, Carousel Components |
+| Backend   | Spring Boot, Spring Security, JWT |
+| Database  | MySQL, Hibernate / Spring Data JPA |
+| Payment   | Razorpay Payment Gateway |
+| Build     | NPM, Maven |
+
+---
+
+## 📂 Project Structure
 
 Fashion-Adda/
-├── frontend/             # React application (Tailwind & UI)
-│   ├── src/
-│   ├── public/
-│   └── package.json
-└── backend/              # Spring Boot application (API & Security)
-    ├── src/
-    └── pom.xml
+├── frontend/ # React application (UI & Client-side logic)
+│ ├── src/
+│ ├── public/
+│ └── package.json
+│
+└── backend/ # Spring Boot application (REST API & Security)
+├── src/
+└── pom.xml
 
 
-    ⚙️ Installation & Setup
-1. Prerequisites
-Node.js (v14+)
+## ⚙️ Installation & Setup
 
-Java JDK 17 or higher
+### 1️⃣ Prerequisites
+- Node.js (v14+)
+- Java JDK 17 or higher
+- MySQL Server
+- Maven
 
-MySQL Server
+---
 
-Maven
+### 2️⃣ Backend Setup
+1. Navigate to the `backend` folder.
+2. Update `src/main/resources/application.properties` with your database details:
 
-2. Backend Setup
-Navigate to the backend folder.
-
-Update src/main/resources/application.properties with your MySQL credentials:
-
-Properties
-
-spring.datasource.url=jdbc:mysql://localhost:3306/fashion_adda_db //(use database name whatever you created in your Server or local machine)
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/fashion_adda_db
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
+Run the backend:
 
-Run the application:
-
-Bash
-
+bash
+Copy code
 mvn spring-boot:run
-
-3. Frontend Setup
+3️⃣ Frontend Setup
 Navigate to the frontend folder:
 
-Bash
+backend Repo: https://github.com/Jitendra-Kumar7078/e-commerce-backend (Pull this repo for project setup)
 
+
+bash
+Copy code
 cd frontend
-
 Install dependencies:
 
-Bash
-
+bash
+Copy code
 npm install
-
 Start the development server:
 
-Bash
-
+bash
+Copy code
 npm start
+Open in browser:
 
+
+http://localhost:5454
 🔐 Security
-The application uses Spring Security with JWT to protect sensitive routes. The Admin dashboard is only accessible to users with the ADMIN role, while the checkout process is secured for registered USERS.
+JWT-based authentication using Spring Security.
+
+Admin dashboard is restricted to ADMIN role users.
+
+Checkout and order features are secured for authenticated users.
 
 💳 Payment Integration
-This project uses the Razorpay API for payment processing. To use it, ensure you have your RAZORPAY_KEY_ID and RAZORPAY_KEY_SECRET configured in the backend environment.
+Integrated with Razorpay Payment Gateway.
 
-Order Tracking: Monitor and manage customer orders in real-time.
+Requires RAZORPAY_KEY_ID and RAZORPAY_KEY_SECRET configuration in the backend.
 
+Enables secure and real-time payment processing.
+
+📌 Future Enhancements
+Wishlist functionality
+
+Product reviews & ratings
+
+Order tracking system
+
+Deployment on cloud platforms (Vercel / Render)
+
+Improved admin analytics dashboard
+
+👨‍💻 Author
+Jitendra Kumar
+-the_mahaveer's_umpire
+
+GitHub: https://github.com/Jitendra-Kumar7078
+
+LinkedIn: https://www.linkedin.com/in/jitendra-kumar-b5a208323/
+
+⭐ Support
+If you like this project, please give it a ⭐ on GitHub!
